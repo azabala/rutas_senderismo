@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.buscamapas.rutas_senderismo" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0"  >
+<widget id="com.buscamapas.rutas_senderismo" version="1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Rutas Senderismo</name>
     <description>
         'Rutas Senderismo' es una app que te permite acceder a más de 185.000 rutas de mountain bike repartidas por todo el mundo. Podrás descargar tracks a tu dispositivo en formato 'kml' y seguirlos montado en tu bici con los principales navegadores GPS (OruxMaps, Google Maps, etc), siempre con la cartografía de fondo de Open Street Map. En breve podrás ver panorámicas y fotografías de las zonas que estás visualizando en el mapa.
@@ -65,10 +65,10 @@
          <param name="android-package" value="com.rjfun.cordova.plugin.AdMob"/>
       </feature>
       
-     <gap:plugin name="cordova-plugin-whitelist" source="npm">
-    </gap:plugin>
-     
-     
+     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+     <allow-navigation href="http://*/*" />
+     <allow-navigation href="https://*/*" />
+     <allow-navigation href="data:*" />
      <gap:plugin name="org.apache.cordova.file" source="npm" />
      <gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
      <gap:plugin name="org.apache.cordova.geolocation" source="npm" />
@@ -83,10 +83,6 @@
      <gap:plugin name="com.rjfun.cordova.plugin.admob" source="plugins.cordova.io"source="npm" />
      
      <gap:plugin name="net.tunts.webintent" version="0.2.1" source="npm" />
-
-    <allow-navigation href="http://*/*" />
-     <allow-navigation href="https://*/*" />
-     <allow-navigation href="data:*" />
 
     <access origin="*" />
 </widget>
